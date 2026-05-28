@@ -1,6 +1,5 @@
 # GitHub Reference for CSC600 Partner Projects
-Justin Puno
-\n 5/28/26
+Justin Puno, 5/28/26
 
 ## The Mental Model
 
