@@ -1,13 +1,10 @@
-# GitHub Reference for CSC600 Students
-*Compiled by Justin Puno — Cycles 1 & 2, Spring 2026*
-
-> Personal reference guide. Not actively maintained — use it as a starting point, not a source of truth.
-
----
+# GitHub Reference for CSC600 Partner Projects
+Justin Puno
+5/28/26
 
 ## The Mental Model
 
-Git tracks changes to your files over time. Every "commit" is a saved snapshot with a note explaining what you did. GitHub hosts those snapshots online so two people can work on the same project without overwriting each other.
+Git tracks changes to your files over time. Therefore, you can think of every "commit" as a saved snapshot of your project with a note explaining what you did or changed. GitHub hosts those snapshots online so two or more people can work on the same project without overwriting each other.
 
 ---
 
@@ -28,28 +25,28 @@ your-project/
 ├── README.md
 ├── .gitignore
 ├── data/
-│   ├── raw/          ← never edit these
+│   ├── raw/          
 │   └── processed/
 ├── notebooks/
 ├── paper/
 └── figures/
 ```
 
-Your README should answer: what is this, what data does it use, and how do you reproduce it.
+Your README should provide a brief overview of your project and answer some key questions: what is this, what data does it use, and how do you reproduce it.
 
 ---
 
 ## Daily Workflow
 
 ```bash
-git pull origin main        # always start here
+git pull origin main        # start here
 # ... do your work ...
 git add .
 git commit -m "Describe what you actually changed"
 git push origin main
 ```
 
-**Always pull before you push.** This prevents most conflicts before they happen.
+**Always pull before you push.**
 
 ---
 
@@ -67,7 +64,7 @@ Write them like you're leaving a note for your partner.
 
 ## Resolving Merge Conflicts
 
-When two people edit the same part of a file, Git flags it like this:
+When two people edit the same part of a file, Git gives an error message it like this:
 
 ```
 <<<<<<< HEAD
@@ -77,7 +74,7 @@ your partner's version
 >>>>>>> branch
 ```
 
-To fix it: open the file, decide what it should say, delete the conflict markers, then:
+To fix it: open the file, decide what it should say, then:
 
 ```bash
 git add filename
@@ -91,10 +88,9 @@ git push origin main
 
 ## Resources
 
-- [GitHub Quickstart](https://docs.github.com/en/get-started/quickstart) — start here
-- [Oh Shit, Git!](https://ohshitgit.com/) — plain-language fixes for common disasters
-- [Missing Semester — Version Control](https://missing.csail.mit.edu/2020/version-control/) — best conceptual explanation
+- [Nick's Github Resources](https://github.com/nzufelt/resources_for_students/blob/master/git.md)
+- [GitHub Quickstart](https://docs.github.com/en/get-started/quickstart)
+- [Oh Shit, Git!](https://ohshitgit.com/)
+- [Missing Semester — Version Control](https://missing.csail.mit.edu/2020/version-control/)
 
 ---
-
-*Spring 2026*
